@@ -1,0 +1,157 @@
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Giữ nền cố định */
+}
+
+#login-container, #welcome-container, #gallery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#login-container {
+    background-image: url('B6B0E5A5-0795-4A39-81C9-6ADF05EBE85D.jpg'); /* Đặt ảnh nền cho trang nhập password */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#login-container input {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px #000000; /* Thêm viền chữ để dễ nhìn hơn */
+    color: white; /* Đặt màu chữ */
+    background: rgba(0, 0, 0, 0.5); /* Nền tối nhẹ để dễ đọc chữ */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+#login-container input::placeholder {
+    color: white;
+    text-shadow: 2px 2px 4px #000000; /* Thêm viền chữ cho placeholder */
+}
+
+#welcome-container {
+    text-align: center;
+    background-image: url('B6B0E5A5-0795-4A39-81C9-6ADF05EBE85D.jpg'); /* Đặt ảnh nền cho welcome-container */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#welcome-container .welcome-text {
+    background: rgba(0, 0, 0, 0.5); /* Đặt nền tối cho văn bản để dễ đọc */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#gallery-container {
+    position: relative;
+    padding-bottom: 150px; /* Tạo khoảng trống cho các nút */
+    background-image: url('IMG_6238.JPG'); /* Đặt ảnh nền cho gallery-container */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#gallery-container header {
+    margin: 20px;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Thêm khoảng cách giữa các hình ảnh */
+}
+
+.gallery-image {
+    margin: 10px;
+    max-width: 300px; /* Phóng to kích thước ảnh */
+    height: auto;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: pink;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s; /* Thêm hiệu ứng chuyển tiếp */
+}
+
+button:hover {
+    transform: scale(1.1); /* Phóng to khi di chuột qua */
+    background: #ff69b4; /* Đổi màu khi di chuột qua */
+}
+
+button:active {
+    transform: scale(0.9); /* Thu nhỏ khi nhấn */
+    background: #ff1493; /* Đổi màu khi nhấn */
+}
+
+button + button {
+    margin-left: 10px;
+}
+
+.exit-button {
+    background: red;
+    font-size: smaller; /* Giảm kích thước font chữ */
+}
+
+.navigation-buttons {
+    display: flex;
+    flex-direction: column; /* Chuyển hướng flex thành cột */
+    align-items: center; /* Canh giữa các nút theo chiều ngang */
+    gap: 10px;
+    position: fixed;
+    bottom: 150px; /* Điều chỉnh vị trí nút lên trên */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.next-page {
+    font-size: larger; /* Tăng kích thước font chữ của nút "Qua phòng khác" */
+}
+
+.welcome-text, .small-text, h1, h2, p, label {
+    font-family: 'Garamond', serif;
+    text-shadow: 2px 2px 4px #000000; /* Thêm viền chữ để dễ nhìn hơn */
+}
+
+h1 {
+    font-size: 3em; /* Tăng kích thước chữ */
+}
+
+h2 {
+    font-size: 2.5em; /* Tăng kích thước chữ */
+}
+
+.small-text {
+    font-size: 2em; /* Tăng kích thước chữ */
+}
+
+p {
+    font-size: 1.5em; /* Tăng kích thước chữ */
+}
+
+input {
+    font-size: 1.5em; /* Tăng kích thước chữ */
+    font-family: 'Times New Roman', serif;
+}
+
+.welcome-text {
+    text-align: center;
+}
+

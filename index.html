@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dduc and Mlinh's Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-container">
+        <h1>Welcome to our gallery</h1>
+        <form id="login-form" onsubmit="return checkPassword()">
+            <input type="text" id="password" placeholder="Nhập mã vào cổng" required>
+            <button type="submit">Enter</button>
+        </form>
+    </div>
+
+    <div id="welcome-container" style="display:none;">
+        <div class="welcome-text">
+            <h2>Chào mừng bạn đã tới với triển lãm tranh Dduc and Mlinh, đây là nơi lưu giữ những tấm hình kỉ niệm của chúng mìnhhh</h2>
+            <p class="small-text">Phòng triển lãm được khánh thành vào ngày 05/06/2024, được kiến trúc sư Dduc thành lập sau hơn 1 tháng bên Mlinh, hi vọng các bạn sẽ có 1 khoảng thời gian vui vẻ khi tham quan nơi đây</p>
+            <button onclick="enterGallery()">Vào phòng triển lãm</button>
+        </div>
+    </div>
+
+    <div id="gallery-container" style="display:none;">
+        <header>
+            <h1>Dduc and Mlinh's Gallery</h1>
+        </header>
+        <section id="gallery">
+            <!-- Gallery images will be inserted here -->
+        </section>
+        <div class="navigation-buttons">
+            <button class="next-page" onclick="nextPage()">Qua phòng khác</button>
+            <button class="exit-button" onclick="exitGallery()">Ra khỏi phòng triển lãm</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
